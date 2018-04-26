@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+}
+
+.tile-board {
+    display: flex;
+    justify-content: center
+}
+.btn-tile {
+    width: 360px;
+    height: 360px;
+    margin: 18px;
+}
+
+
+.timer {
+    font-size: 6rem;
+}
+
+
+
+
+
+
+
+
+
+.make-blue {
+    color: blue;
+}
