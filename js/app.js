@@ -1,4 +1,10 @@
+var timer;
 
+var cannon = {
+    id: 'cannon',
+    totalTime: 162,
+    currentTime: 162
+}
 
 $('#cannon').click(function(){
     $(this).toggleClass('running')
@@ -6,18 +12,23 @@ $('#cannon').click(function(){
 
     if($(this).hasClass('running')) {
         console.log('start timer');
-        var runTimer = setInterval(timer, 100);
+        timer = setInterval(runTimer, 1000);
     } else {
         console.log('end timer');
-        clearInterval(runTimer);
+        clearInterval(timer);
     }
     
     
 });
 
-var time = 0;
+var i = 162;
 
-function timer() {
-    time += 1;
-    console.log(time);
+function runTimer() {
+    i -= 1;
+    console.log(i);
+
+    if(i=== 0) {
+        clearInterval(timer);
+        console.log('timer finished');
+    }
 }
