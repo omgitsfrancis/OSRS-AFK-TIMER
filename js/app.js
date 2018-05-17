@@ -17,8 +17,6 @@ $('#cannon').click(function(){
         console.log('end timer');
         clearInterval(timer);
     }
-    
-    
 });
 
 var i = 162;
